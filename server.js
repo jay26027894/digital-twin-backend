@@ -9,7 +9,6 @@ import personaRoutes from "./routes/persona.js";
 import behaviorRoutes from "./routes/behavior.js";
 import taskRoutes from "./routes/taskRoutes.js";
 import suggestionsRoutes from "./routes/suggestions.js";
-import calendarRoutes from "./routes/calendar.js";
 
 dotenv.config();
 const app = express();
@@ -30,7 +29,6 @@ app.use("/api/persona", personaRoutes);
 app.use("/api/behavior", behaviorRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/suggestions", suggestionsRoutes);
-app.use("/api/calendar", calendarRoutes);
 
 // Health check endpoint
 app.get("/api/health", (req, res) => {
